@@ -12,18 +12,21 @@ long long summition(string str)
         if(str[i] == ' ')
         {
             sum += stoi(temp);
+
             temp = "";
         }
         
         temp += str[i];
     }
     sum += stoi(temp);
+
     return sum;
 }
 int main()
 {
     string str;
     getline(cin, str);
+
     cout << summition(str) << endl;
 
     return 0;
