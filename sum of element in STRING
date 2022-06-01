@@ -16,6 +16,7 @@ long long summition(string str)
     
     {
         if(str[i] == ' ')
+        
         {
             sum += stoi(temp);
 
@@ -23,11 +24,14 @@ long long summition(string str)
         }
         
         temp += str[i];
+        
     }
     sum += stoi(temp);
 
     return sum;
+    
 }
+
 int main()
 {
     string str;
